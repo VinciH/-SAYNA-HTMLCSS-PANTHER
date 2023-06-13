@@ -1,0 +1,143 @@
+:root {
+    --bleu-fonce:#021740;
+    --bleu-roi:#07338c;
+    --blanc: #FFFFFF;
+    --violet:#9E91B7;
+}
+@font-face {
+    font-family: "Panthera";
+    src: url(./polices/PantheraRegular-MVZ9J.ttf);
+}
+@font-face {
+    font-family: "Wakanda";
+    src: url(./polices/wakanda.ttf);
+}
+@font-face {
+    font-family: "Beyno";
+    src: url(./polices/BEYNO.otf);
+}
+@font-face {
+    font-family: "Cantarell";
+    src: url(./polices/Cantarell-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: radial-gradient(126.67% 350.28% at -21.35% 0%,#11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64, 0.837641) 94.57%,rgba(2, 23, 64, 0) 100%);
+    color: var(--blanc);
+}
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+p{
+    font-size: 10px;
+    font-family: "Cantarell";
+
+}
+
+.left-bar1 {
+    height: 400px;
+    border-left: var(--violet) 3px solid;
+    position: fixed;
+    left:2.5%;
+}
+.left-bar2 {
+    height: 280px;
+    border-left: var(--violet) 3px solid;
+    position: fixed;
+    left:4%;
+}
+.social-tete {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: fixed;
+    top: 290px;
+    left: 3.3%;
+}
+/*Design de la partie navigation*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.menu a {
+    text-decoration: none;
+    color: var(--blanc);
+}
+.menu {
+    display: flex;
+    gap:35px;
+    font-family: "Beyno";
+    font-size: 15px;
+}
+.logo-header img {
+    width: 100px;
+}
+.accueil a {
+    color: var(--violet);
+    text-decoration: underline;
+}
+/*Design de la première section*/
+.panther {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.panther .description {
+    padding-top: 170px;
+    padding-left: 40px;
+    margin-left: 7.5%;
+}
+.panther .photo-panther img {
+    width: 810px;
+}
+h1 {
+    font-family: "Panthera";
+    font-size: 48px;
+    color: var(--violet);
+    font-weight: lighter;
+}
+.panther h2 {
+    font-family: "Beyno";
+    font-weight: lighter;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    color: var(--violet);
+}
+.voir a{
+    color: var(--blanc);
+    font-size: 13px;
+    
+}
+.panther.voir{
+    padding-top: 20px;
+}
+/*Design de la partie personnage*/
+
+#personnage .content {
+    display: flex;
+    margin-left: 7.5%;
+    background-color: var(--bleu-fonce);
+    height: 250px;
+}
+#personnage .image {
+    height: 250px;
+}
+#personnage h3{
+    font-family: "Beyno";
+    font-weight: lighter;
+    color: var(--violet);
+    font-size: 18px;
+}
+#personnage .description{
+    padding: 30px 20px;
+}
+#personnage p{
+    margin-top:10px ;
+}
