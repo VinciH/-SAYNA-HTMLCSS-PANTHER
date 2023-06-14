@@ -3,6 +3,7 @@
     --bleu-roi:#07338c;
     --blanc: #FFFFFF;
     --violet:#9E91B7;
+    --violte-fonce:#3D2DA6;
 }
 @font-face {
     font-family: "Panthera";
@@ -125,10 +126,13 @@ h1 {
     margin-left: 7.5%;
     background-color: var(--bleu-fonce);
     height: 250px;
+    margin-bottom: 100px;
+    text-align: justify;
 }
 #personnage .image {
     height: 250px;
 }
+
 #personnage h3{
     font-family: "Beyno";
     font-weight: lighter;
@@ -140,4 +144,90 @@ h1 {
 }
 #personnage p{
     margin-top:10px ;
+}
+/*Design de la partie description de black panther*/
+.panther-content {
+    width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#panther h3 {
+    font-family: "Beyno";
+    color: var(--violet);
+    margin: 18px 0;
+    font-weight: lighter;
+}
+#panther .panther-descri{
+    text-align: justify;
+    margin-top: 30px;
+}
+#panther p{
+    margin: 18px 0;
+    font-weight: lighter;
+}
+#panther ul {
+    font-size: 10px;
+    font-family: "Cantarell";
+    margin-bottom: 10px;
+    margin-top: -15px;
+    list-style-type:"- ";
+    padding-left: 5px;
+}
+#panther .profile {
+    width: 60%;
+    margin: 0 auto;
+}
+#panther .panther-img {
+    width: 280px;
+    position: absolute;
+    top: 980px;
+    left: 850px;
+    z-index: 1;
+}
+.profile-content {
+    background-color: var(--blanc);
+    height: 520px;
+    width: 350px;
+    padding: 0 55px;
+    border-radius: 10px;
+    position: absolute;
+    top: 1200px;
+    left: 813px;
+    padding-top: 190px;
+    line-height: 10px;
+}
+#panther h4{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+#panther nav a{
+    display: flex;
+    padding: 10px 12px;
+    background-color: var(--violte-fonce);
+    color: var(--blanc);
+    text-decoration: none;
+    justify-content: center;
+    font-size: 9px;
+    border-radius: 5px;
+}
+#panther .profile p {
+    color: var(--bleu-fonce);
+    font-weight:900;
+    font-size: 12px;
+    
+}
+
+#panther span {
+    color: var(--bleu-roi);
+}
+#panther .parenthèse{
+    font-size: 10px;
+}
+#panther .panther-img2 {
+    position: absolute;
+    top: 1780px;
+    width: 350px;
+    left: 825px;
 }
