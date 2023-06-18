@@ -1,9 +1,10 @@
 :root {
     --bleu-fonce:#021740;
     --bleu-roi:#07338c;
-    --blanc: #FFFFFF;
+    --blanc: #ffffffe1;
     --violet:#9E91B7;
     --violte-fonce:#3D2DA6;
+    --rose-pale:#F2CEF2;
 }
 @font-face {
     font-family: "Panthera";
@@ -27,9 +28,11 @@
     box-sizing: border-box;
 }
 body {
-    background: radial-gradient(126.67% 350.28% at -21.35% 0%,#11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64, 0.837641) 94.57%,rgba(2, 23, 64, 0) 100%);
+    background: radial-gradient(126.67% 350.28% at -21.35% 0%,#11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64, 0.837641) 94.57%,rgba(2, 23, 64, 0.753) 100%);
     color: var(--blanc);
+    
 }
+
 .container {
     width: 85%;
     margin: 0 auto;
@@ -60,6 +63,10 @@ p{
     top: 290px;
     left: 3.3%;
 }
+.social-tete:hover{
+    filter: invert(1%) sepia(100%) saturate(0%) hue-rotate(327deg) brightness(115%) contrast(100%);
+}
+
 /*Design de la partie navigation*/
 nav{
     display: flex;
@@ -212,6 +219,7 @@ h1 {
     font-size: 9px;
     border-radius: 5px;
 }
+
 #panther .profile p {
     color: var(--bleu-fonce);
     font-weight:900;
@@ -229,5 +237,158 @@ h1 {
     position: absolute;
     top: 1780px;
     width: 350px;
-    left: 825px;
+    left: 825px ;
+}
+/*design de la partie formulaire*/
+#formulaire {
+    background-image: url("./Illustrations\ +\ Logo/accueil/pantherhome7.png");
+    height: 800px;
+}
+#formulaire .formulaire-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 55%;
+    margin: 0 auto;
+    background-image: linear-gradient(180deg,#FFFFFF, #ffffff48);
+    height: 480px;
+    border-radius: 120px;
+    color: var(--bleu-fonce);
+    position: relative;
+    top: 200px;
+
+}
+.champs {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.texte p {
+    font-size: 13px;
+}
+.texte h3 {
+    font-size: 33px;
+    font-family: "Cantarell";
+}
+.champs input[type=name], .champs input[type=email] {
+    display: block;
+    margin: 10px 0;
+    background: none;
+    height: 40px;
+    border: var(--bleu-fonce) solid 1px;
+    border-radius: 50px;
+    padding-left: 10px;
+}
+.champs textarea{
+
+    padding: 10px;
+    margin: 10px 0;
+    background: none;
+    border: var(--bleu-fonce) solid 1px;
+    border-radius: 20px;
+    display: block;
+}
+.champs input[type=submit] { 
+    width: 30%;
+    margin: 10px auto;
+    height: 38px;
+    border-radius: 50px;
+    border:none;
+    font-size: 10px;
+    font-weight: bold;
+    background-color:var(--rose-pale);
+    color: var(--bleu-fonce);
+}
+.champs input[type=submit]:hover{
+    box-shadow: var(--rose-pale) 1px 1px 60px;
+}
+/*design de la partie footer*/
+#footer{
+    background-image: url("./Illustrations\ +\ Logo/All pages/back_footer.png");
+    height: 500px;
+    margin-top: 150px;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+}
+.img1 {
+    width: 220px;
+    position: relative;
+    top: 140px;
+    left: 330px;
+}
+.img2 {
+    width: 120px;
+    position: relative;
+    top: 13px;
+    left: 155px;
+}
+.img2:hover{
+    filter: invert(50%) sepia(100%) saturate(7440%) hue-rotate(239deg) brightness(87%) contrast(100%);
+}
+.footer-logo:hover {
+    transform: scale(1.1);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 140px;
+    left: 300px;
+    width: 500px;
+    justify-content: space-between;
+}
+#footer h3 {
+    font-family: "Cantarell";
+    font-size: 17px;
+    letter-spacing: 5px;
+}
+#footer .content1 {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+#footer .content1 a{
+    text-decoration: none;
+    color: var(--blanc);
+    padding: 5px 0;
+    font-weight: lighter;
+}
+#footer .content1 a:hover{
+    text-decoration: underline;
+}
+.footer-social{
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.footer-social img{
+    width: 35px;
+}
+.footer-social img:hover{
+    transform: scale(1.1);
+}
+.content2 {
+    position: relative;
+    top: 75px;
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    left: 650px;
+    gap: 18px;
+}
+#footer ul{
+    display: flex;
+    flex-direction: row;
+    gap:18px;
+    font-family: "Cantarell";
+}
+#footer ul, #footer p {
+    font-size: 12px;
 }
