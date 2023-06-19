@@ -30,7 +30,19 @@
 body {
     background: radial-gradient(126.67% 350.28% at -21.35% 0%,#11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64, 0.837641) 94.57%,rgba(2, 23, 64, 0.753) 100%);
     color: var(--blanc);
-    
+    animation: fadein 5s;
+    animation-direction: ltr;
+}
+@keyframes fadein {
+    0% {
+        opacity:0;
+    }
+    50%{
+        opacity:0.5;
+    }
+    100% {
+        opacity:1;
+    }
 }
 
 .container {
